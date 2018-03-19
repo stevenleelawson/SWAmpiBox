@@ -26,14 +26,21 @@ class OverViewCrawl extends Component {
     const randomNum = Math.floor(Math.random() * Math.floor(6))
     console.log(randomNum)
     if(this.state.overView.results) {
-      let films = this.state.overView.results
-      const filmOpeners = films[randomNum].opening_crawl
-      const titles = films[randomNum].title
+      let films = this.state.overView.results;
+      const filmOpeners = films[randomNum].opening_crawl;
+      const titles = films[randomNum].title;
+      const releaseDate = films[randomNum].release_date;
 
       return (
         <div className='over-view'>
-          <p>{filmOpeners}</p>
-          <h6>{titles}</h6>
+          <section className='star-wars'>
+            <div className="crawl">
+              <p>{filmOpeners}</p>
+              <h6>{titles}</h6>
+              <h6>{releaseDate}</h6>
+
+            </div>
+          </section>
         </div>
       )
     } else {
