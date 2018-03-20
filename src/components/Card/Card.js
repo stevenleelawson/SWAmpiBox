@@ -1,9 +1,11 @@
 import React from 'react';
+import './Card.css'
 
-const Card = () => {
+const Card = ({name, species}) => {
   return (
     <div className='card'>
-      <h1>I be Card</h1>
+      <h1 className='name'>{name}</h1>
+      <p className='species'>Species: {species}</p>
     </div>
   )
 }
