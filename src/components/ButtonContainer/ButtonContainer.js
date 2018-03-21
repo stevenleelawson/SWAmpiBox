@@ -5,9 +5,9 @@ import './ButtonContainer.css';
 const ButtonContainer = () => {
   return (
     <div className='button-container'>
-      <Button />
-      <Button />
-      <Button />
+      <Button category="people"/>
+      <Button category="vehicles"/>
+      <Button category="planets"/>
     </div>
   )
 }
