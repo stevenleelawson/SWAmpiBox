@@ -44,7 +44,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <h1 className="App-title">Lawson's SwampiBox</h1>
+          <h1 className="App-title">SWapiBox</h1>
         </header>
 
         <OverViewCrawl />
