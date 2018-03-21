@@ -30,16 +30,16 @@ class App extends Component {
     return Promise.all(promises)
   }
   getPeople = () => {
-
+    const url = 'https://swapi.co/api/people/'
+    fetch(url)
+    .then(response => response.json())
+    .then( species => this.fetchSpecies(species))
+    .then( homeworld => this.fetchHomeworld(homeworld))
+    .then(starWars => this.setState({  starWars }))
   }
   componentDidMount() {
-    const url = 'https://swapi.co/api/people/'
-      fetch(url)
-      .then(response => response.json())
-      .then( species => this.fetchSpecies(species))
-      .then( homeworld => this.fetchHomeworld(homeworld))
-      .then(starWars => this.setState({  starWars }))
-    }
+    // this.getPeople()
+  }
   render() {
     return (
       <div className="App">
@@ -48,10 +48,10 @@ class App extends Component {
         </header>
 
         <OverViewCrawl />
-        <ButtonContainer />
+        <ButtonContainer getPeople={this.getPeople} />
         {
           this.state.starWars &&
-          <CardContainer data={this.state.starWars} />
+          <CardContainer data={this.state.starWars}/>
         }
       </div>
     );
