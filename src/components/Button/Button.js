@@ -1,11 +1,14 @@
 import React from 'react';
 import './Button.css';
+import { NavLink } from 'react-router-dom';
 
 const Button = ({category, getPeople}) => {
   return (
-    <div>
-      <button className='button' onClick={() => getPeople()}>{category}</button>
-    </div>
+
+      <NavLink to={'/people'}>
+        <button className='button' onClick={() => getPeople()}>{category}</button>
+      </NavLink>
+
   )
 }
 

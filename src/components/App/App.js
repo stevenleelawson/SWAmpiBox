@@ -3,13 +3,13 @@ import OverViewCrawl from '../OverViewCrawl/OverViewCrawl';
 import './App.css';
 import ButtonContainer from '../ButtonContainer/ButtonContainer';
 import CardContainer from '../CardContainer/CardContainer';
-// import dataCleaner from '../helper';
+import { Route } from 'react-router-dom';
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      starWars: null
+      starWars: []
 
     }
   }
@@ -46,13 +46,10 @@ class App extends Component {
         <header className="App-header">
           <h1 className="App-title">SWapiBox</h1>
         </header>
+        <Route path='/' render={() => <OverViewCrawl />} />
+        <Route path='/' render={() => <ButtonContainer getPeople={this.getPeople} />} />
+        <Route exact path='/people' render={() => <CardContainer data={this.state.starWars}/>} />
 
-        <OverViewCrawl />
-        <ButtonContainer getPeople={this.getPeople} />
-        {
-          this.state.starWars &&
-          <CardContainer data={this.state.starWars}/>
-        }
       </div>
     );
   }
