@@ -9,7 +9,7 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      starWars: null
+      starWars: []
 
     }
   }
@@ -46,14 +46,10 @@ class App extends Component {
         <header className="App-header">
           <h1 className="App-title">SWapiBox</h1>
         </header>
-        <Route exact path='/' render={() => <OverViewCrawl />} />
-        <Route exact path='/' render={() => <ButtonContainer getPeople={this.getPeople} />} />
+        <Route path='/' render={() => <OverViewCrawl />} />
+        <Route path='/' render={() => <ButtonContainer getPeople={this.getPeople} />} />
+        <Route exact path='/people' render={() => <CardContainer data={this.state.starWars}/>} />
 
-
-        {
-          this.state.starWars &&
-          <CardContainer data={this.state.starWars}/>
-        }
       </div>
     );
   }
