@@ -3,7 +3,7 @@ import OverViewCrawl from '../OverViewCrawl/OverViewCrawl';
 import './App.css';
 import ButtonContainer from '../ButtonContainer/ButtonContainer';
 import CardContainer from '../CardContainer/CardContainer';
-// import dataCleaner from '../helper';
+import { Route } from 'react-router-dom';
 
 class App extends Component {
   constructor() {
@@ -46,9 +46,10 @@ class App extends Component {
         <header className="App-header">
           <h1 className="App-title">SWapiBox</h1>
         </header>
+        <Route exact path='/' render={() => <OverViewCrawl />} />
+        <Route exact path='/' render={() => <ButtonContainer getPeople={this.getPeople} />} />
 
-        <OverViewCrawl />
-        <ButtonContainer getPeople={this.getPeople} />
+
         {
           this.state.starWars &&
           <CardContainer data={this.state.starWars}/>

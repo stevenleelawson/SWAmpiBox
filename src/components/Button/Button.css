@@ -11,3 +11,7 @@
 .button:hover {
   border: 5px solid #ffe900;
 }
+
+.active {
+  /* border: 5px solid blue; */
+}
