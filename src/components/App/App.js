@@ -7,6 +7,7 @@ import VehiclesCardContainer from
   '../VehiclesCardContainer/VehiclesCardContainer';
 import { Route } from 'react-router-dom';
 import Favorites from '../Favorites/Favorites';
+import PlanetsCardContainer from '../PlanetsCardContainer/PlanetsCardContainer';
 
 class App extends Component {
   constructor() {
@@ -109,9 +110,6 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <Route exact path='/favorites' render={() => <Favorites favorites={this.state.favorites}
-          toggleFavorites={this.toggleFavorites}
-          />} />
           <h1 className="App-title">SWapiBox</h1>
 
 
@@ -121,11 +119,19 @@ class App extends Component {
         <Route path='/' render={() => <ButtonContainer
                                         getPeople={this.getPeople}
                                         getVehicles={this.getVehicles}
+                                        getPlanets={this.getPlanets}
                                         favorites={this.state.favorites}
+         />} />
+         <Route exact path='/favorites' render={() => <Favorites favorites={this.state.favorites}
+           toggleFavorites={this.toggleFavorites}
          />} />
         <Route exact path='/people' render={() => <PeopleCardContainer data={this.state.people}
         toggleFavorites={this.toggleFavorites}/>} />
-        <Route exact path='/vehicles' render={() => <VehiclesCardContainer data={this.state.vehicles}/>} />
+        <Route exact path='/vehicles' render={() => <VehiclesCardContainer data={this.state.vehicles}
+        toggleFavorites={this.toggleFavorites}
+        toggleFavorites={this.toggleFavorites}/>} />
+        <Route exact path='/planets' render={() => <PlanetsCardContainer data={this.state.planets}
+        toggleFavorites={this.toggleFavorites}/>} />
 
       </div>
     );

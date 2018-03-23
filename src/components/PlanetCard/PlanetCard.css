@@ -1,0 +1,15 @@
+.planet-name,
+.planet-terrain,
+.planet-population,
+.planet-climate,
+.planet-residents {
+  color: white;
+}
+
+.planet {
+  border: 3px solid #fff;
+  border-radius: 5px;
+  height: 15rem;
+  width: 15rem;
+  margin: 5rem;
+}
