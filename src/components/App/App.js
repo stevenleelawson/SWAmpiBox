@@ -14,6 +14,7 @@ class App extends Component {
     this.state = {
       people: [],
       vehicles: [],
+      planets: [],
       favorites: []
 
     };
@@ -34,6 +35,38 @@ class App extends Component {
     //in favorite component, conditional to check length and render no favorites message
       //IF length, render favorites based on unique key value(that way can render different cards)
       //1.iterate over them with conditions if(uniquekey), then render card unique to that key
+
+  }
+  // fetchResidentNames = (planetResidents) => {
+  //   console.log(promises)
+  //   const promises = planetResidents.map( resident => {
+  //     console.log('fetchResidentNames', resident)
+  //   })
+  // }
+  fetchResidents = (planets) => {
+    const promises = planets.results.map(planet => {
+      const residents = planet.residents.map(this.fetchResidentData)
+    return Promise.all(residents).then(residents =>
+    ({name: planet.name,
+     terrain: planet.terrain,
+     population: planet.population,
+     climate: planet.climate,
+     residents: residents}))
+    })
+    return Promise.all(promises)
+  }
+
+  fetchResidentData = resident => {
+    return fetch(resident)
+    .then(response => response.json())
+    .then(data => data.name)
+  }
+  getPlanets = () => {
+    const url = 'https://swapi.co/api/planets/'
+    fetch(url)
+      .then(response => response.json())
+      .then(data => this.fetchResidents(data))
+      .then(planets => this.setState({ planets }))
 
   }
   getVehicles = () => {
@@ -68,10 +101,10 @@ class App extends Component {
     .then( homeworld => this.fetchHomeworld(homeworld))
     .then(people => this.setState({  people }))
   }
-  // componentDidMount() {
-  //   this.getPeople();
-  //   this.getVehicles();
-  // }
+  componentDidMount() {
+    this.getPlanets()
+    // this.fetchResidentNames()
+  }
   render() {
     return (
       <div className="App">
