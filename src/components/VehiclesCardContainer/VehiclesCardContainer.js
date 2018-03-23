@@ -7,7 +7,9 @@ const VehiclesCardContainer = ({data}) => {
   let displayVehicles;
   if(data.results){
     displayVehicles = data.results.map((vehicle, index) => {
-      return <VehicleCard name={vehicle.name}/>
+      return <VehicleCard name={vehicle.name}
+                          key={vehicle.name + index}
+                        />
     })
   } else {
     return null
