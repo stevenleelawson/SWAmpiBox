@@ -10,6 +10,7 @@ const VehiclesCardContainer = ({data}) => {
       return <VehicleCard name={vehicle.name}
                           model={vehicle.model}
                           vehicleClass={vehicle.vehicle_class}
+                          passengers={vehicle.passengers}
                           key={vehicle.name + index}
                         />
     })
