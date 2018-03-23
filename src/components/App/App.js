@@ -3,9 +3,10 @@ import OverViewCrawl from '../OverViewCrawl/OverViewCrawl';
 import './App.css';
 import ButtonContainer from '../ButtonContainer/ButtonContainer';
 import PeopleCardContainer from '../PeopleCardContainer/PeopleCardContainer';
-import VehiclesCardContainer from '../VehiclesCardContainer/VehiclesCardContainer';
-import { Route, NavLink } from 'react-router-dom';
-import Favorites from '../Favorites/Favorites'
+import VehiclesCardContainer from
+  '../VehiclesCardContainer/VehiclesCardContainer';
+import { Route } from 'react-router-dom';
+import Favorites from '../Favorites/Favorites';
 
 class App extends Component {
   constructor() {
@@ -15,10 +16,9 @@ class App extends Component {
       vehicles: [],
       favorites: []
 
-    }
+    };
   }
   toggleFavorites = (card) => {
-    console.log(card)
     const favArray = this.state.favorites;
 
     this.state.favorites.filter(favorite => favorite === card).length ? console.log('remove') : favArray.push(card); this.setState({  favorites: favArray })

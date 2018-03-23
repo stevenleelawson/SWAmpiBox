@@ -17,39 +17,26 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": <h1
-        className="vehicle-name"
+      "children": Array [
+        <h1
+          className="vehicle-name"
 />,
+        <p
+          className="vehicle-model"
+>
+          model: 
+</p>,
+        <p
+          className="vehicle-class"
+>
+          class: 
+</p>,
+      ],
       "className": "vehicle",
     },
     "ref": null,
-    "rendered": Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": undefined,
-        "className": "vehicle-name",
-      },
-      "ref": null,
-      "rendered": null,
-      "type": "h1",
-    },
-    "type": "div",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": <h1
-          className="vehicle-name"
-/>,
-        "className": "vehicle",
-      },
-      "ref": null,
-      "rendered": Object {
+    "rendered": Array [
+      Object {
         "instance": null,
         "key": undefined,
         "nodeType": "host",
@@ -61,6 +48,119 @@ ShallowWrapper {
         "rendered": null,
         "type": "h1",
       },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "model: ",
+            undefined,
+          ],
+          "className": "vehicle-model",
+        },
+        "ref": null,
+        "rendered": Array [
+          "model: ",
+          undefined,
+        ],
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "class: ",
+            undefined,
+          ],
+          "className": "vehicle-class",
+        },
+        "ref": null,
+        "rendered": Array [
+          "class: ",
+          undefined,
+        ],
+        "type": "p",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h1
+            className="vehicle-name"
+/>,
+          <p
+            className="vehicle-model"
+>
+            model: 
+</p>,
+          <p
+            className="vehicle-class"
+>
+            class: 
+</p>,
+        ],
+        "className": "vehicle",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": undefined,
+            "className": "vehicle-name",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "h1",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "model: ",
+              undefined,
+            ],
+            "className": "vehicle-model",
+          },
+          "ref": null,
+          "rendered": Array [
+            "model: ",
+            undefined,
+          ],
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "class: ",
+              undefined,
+            ],
+            "className": "vehicle-class",
+          },
+          "ref": null,
+          "rendered": Array [
+            "class: ",
+            undefined,
+          ],
+          "type": "p",
+        },
+      ],
       "type": "div",
     },
   ],

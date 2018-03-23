@@ -1,4 +1,7 @@
-.vehicle-name {
+.vehicle-name,
+.vehicle-model,
+.vehicle-class,
+.vehicle-passenger {
   color: white;
 }
 
