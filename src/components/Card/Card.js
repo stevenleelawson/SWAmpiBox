@@ -10,7 +10,7 @@ const Card = ({name, species, homeworld, population, toggleFavorites}) => {
       <p className='species'>Species: {species}</p>
       <p className='homeworld'>Homeworld: {homeworld}</p>
       <p className='population'>Population: {population}</p>
-      <button onClick={() => toggleFavorites({name, species, homeworld})}>favorites</button>
+      <button onClick={() => toggleFavorites({name, species, homeworld, population})}>favorites</button>
     </div>
   )
 }

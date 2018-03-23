@@ -1,0 +1,12 @@
+.fav-card {
+  color: yellow;
+}
+.container {
+  height: 10vh;
+  width: 100%;
+  background: purple;
+}
+
+.no-favorite {
+  color: red;
+}
