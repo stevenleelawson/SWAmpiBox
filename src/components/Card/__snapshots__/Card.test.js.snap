@@ -17,23 +17,114 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": <h1>
-        I be Card
-</h1>,
+      "children": Array [
+        <h1
+          className="name"
+/>,
+        <p
+          className="species"
+>
+          Species: 
+</p>,
+        <p
+          className="homeworld"
+>
+          Homeworld: 
+</p>,
+        <p
+          className="population"
+>
+          Population: 
+</p>,
+        <button
+          onClick={[Function]}
+>
+          favorites
+</button>,
+      ],
       "className": "card",
     },
     "ref": null,
-    "rendered": Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": "I be Card",
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": undefined,
+          "className": "name",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "h1",
       },
-      "ref": null,
-      "rendered": "I be Card",
-      "type": "h1",
-    },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Species: ",
+            undefined,
+          ],
+          "className": "species",
+        },
+        "ref": null,
+        "rendered": Array [
+          "Species: ",
+          undefined,
+        ],
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Homeworld: ",
+            undefined,
+          ],
+          "className": "homeworld",
+        },
+        "ref": null,
+        "rendered": Array [
+          "Homeworld: ",
+          undefined,
+        ],
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Population: ",
+            undefined,
+          ],
+          "className": "population",
+        },
+        "ref": null,
+        "rendered": Array [
+          "Population: ",
+          undefined,
+        ],
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "favorites",
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": "favorites",
+        "type": "button",
+      },
+    ],
     "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
@@ -42,23 +133,114 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": <h1>
-          I be Card
-</h1>,
+        "children": Array [
+          <h1
+            className="name"
+/>,
+          <p
+            className="species"
+>
+            Species: 
+</p>,
+          <p
+            className="homeworld"
+>
+            Homeworld: 
+</p>,
+          <p
+            className="population"
+>
+            Population: 
+</p>,
+          <button
+            onClick={[Function]}
+>
+            favorites
+</button>,
+        ],
         "className": "card",
       },
       "ref": null,
-      "rendered": Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "I be Card",
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": undefined,
+            "className": "name",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "h1",
         },
-        "ref": null,
-        "rendered": "I be Card",
-        "type": "h1",
-      },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Species: ",
+              undefined,
+            ],
+            "className": "species",
+          },
+          "ref": null,
+          "rendered": Array [
+            "Species: ",
+            undefined,
+          ],
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Homeworld: ",
+              undefined,
+            ],
+            "className": "homeworld",
+          },
+          "ref": null,
+          "rendered": Array [
+            "Homeworld: ",
+            undefined,
+          ],
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Population: ",
+              undefined,
+            ],
+            "className": "population",
+          },
+          "ref": null,
+          "rendered": Array [
+            "Population: ",
+            undefined,
+          ],
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "favorites",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": "favorites",
+          "type": "button",
+        },
+      ],
       "type": "div",
     },
   ],

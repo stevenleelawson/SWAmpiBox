@@ -8,6 +8,8 @@ const VehiclesCardContainer = ({data}) => {
   if(data.results){
     displayVehicles = data.results.map((vehicle, index) => {
       return <VehicleCard name={vehicle.name}
+                          model={vehicle.model}
+                          vehicleClass={vehicle.vehicle_class}
                           key={vehicle.name + index}
                         />
     })
