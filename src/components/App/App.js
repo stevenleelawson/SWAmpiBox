@@ -21,24 +21,29 @@ class App extends Component {
     };
   }
   toggleFavorites = (card) => {
-    const favArray = this.state.favorites;
+    console.log('card', card);
+    console.log('favssss', this.state.favorites)
+    let favorites = [...this.state.favorites];
+    const newFavorites = favorites.find(name => name.name === card.name)
+    if (newFavorites) {
+      favorites = favorites.filter( favorite => favorite.name !== card.name)
+    } else {
+      favorites.push(card)
+    }
 
-    this.state.favorites.filter(favorite => favorite === card).length ? console.log('remove') : favArray.push(card); this.setState({  favorites: favArray })
-    //onClick add or remove from favorites array
-    //copy the  the whole card as an object and save into favorites array
-    //loop through favorites array, if in there make as favorited
-    //is this in favorites? If so remove it, if not, add it (filter)
-    //if no length of favorites array, display no favorites (be my count)
-
-    //to-do
-    //create favorites component
-    //gets passed down favorites from state, as well as toggle toggleFavorites
-    //in favorite component, conditional to check length and render no favorites message
-      //IF length, render favorites based on unique key value(that way can render different cards)
-      //1.iterate over them with conditions if(uniquekey), then render card unique to that key
+    this.setState({ favorites })
+    // const favArray = this.state.favorites;
+    // this.state.favorites.filter((favorite, index) => {
+    //   return favorite.name === card.name
+    // }).length ? favArray.pop(card) : favArray.push(card); this.setState({  favorites: favArray })
 
   }
+  removeFavorites = (card) => {
+    const favArray = this.state.favorites;
+    const removeArray = this.state.favorites;
+    this.state.favorites.filter(favorite => favorite.name !== card.name); this.setState({ favorites: removeArray })
 
+  }
   fetchResidents = (planets) => {
     const promises = planets.results.map(planet => {
       const residents = planet.residents.map(this.fetchResidentData)

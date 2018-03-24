@@ -24,7 +24,6 @@ class OverViewCrawl extends Component {
 
   render() {
     const randomNum = Math.floor(Math.random() * Math.floor(6))
-    console.log(randomNum)
     if(this.state.overView.results) {
       let films = this.state.overView.results;
       const filmOpeners = films[randomNum].opening_crawl;
