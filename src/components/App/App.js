@@ -21,8 +21,6 @@ class App extends Component {
     };
   }
   toggleFavorites = (card) => {
-    console.log('card', card);
-    console.log('favssss', this.state.favorites)
     let favorites = [...this.state.favorites];
     const newFavorites = favorites.find(name => name.name === card.name)
     if (newFavorites) {
@@ -36,12 +34,6 @@ class App extends Component {
     // this.state.favorites.filter((favorite, index) => {
     //   return favorite.name === card.name
     // }).length ? favArray.pop(card) : favArray.push(card); this.setState({  favorites: favArray })
-
-  }
-  removeFavorites = (card) => {
-    const favArray = this.state.favorites;
-    const removeArray = this.state.favorites;
-    this.state.favorites.filter(favorite => favorite.name !== card.name); this.setState({ favorites: removeArray })
 
   }
   fetchResidents = (planets) => {
@@ -111,9 +103,6 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <h1 className="App-title">SWapiBox</h1>
-
-
-
         </header>
         <Route path='/' render={() => <OverViewCrawl />} />
         <Route path='/' render={() => <ButtonContainer

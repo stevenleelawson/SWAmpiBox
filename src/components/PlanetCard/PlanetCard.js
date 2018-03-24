@@ -1,5 +1,6 @@
 import React from 'react';
 import './PlanetCard.css';
+import { NavLink } from 'react-router-dom';
 
 const PlanetCard = ({name, terrain, population, climate, residents, toggleFavorites}) => {
   return (
@@ -10,6 +11,8 @@ const PlanetCard = ({name, terrain, population, climate, residents, toggleFavori
       <p className='planet-climate'>climate: {climate}</p>
       <p className='planet-residents'>residents: {residents}</p>
       <button onClick={() => toggleFavorites({name, terrain, population, climate, residents, category: 'planets'})}>Favorite</button>
+      {/* <NavLink className="fav-button" to={'/planets'} onClick={() => toggleFavorites({name, terrain, population, climate, residents, category: 'planets'})}>People</NavLink> */}
+
     </div>
   )
 }

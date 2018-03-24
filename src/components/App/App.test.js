@@ -11,5 +11,11 @@ describe('App', () => {
   it('should match the snapshot', () => {
     expect(wrapper).toMatchSnapshot();
   });
-
+  // it('toggleFavorites should add a card to the favorites array', () => {
+  //   const mockCard = {
+  //     name: 'taco'
+  //   }
+  //   wrapper.instance().toggleFavorites(mockCard);
+  //   expect(wrapper).state('favorites').toBe(1);
+  // })
 })
