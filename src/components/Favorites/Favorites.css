@@ -2,9 +2,12 @@
   color: yellow;
 }
 .container {
-  height: 10vh;
   width: 100%;
-  background: purple;
+  height: 30vw;
+  overflow: scroll;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .no-favorite {

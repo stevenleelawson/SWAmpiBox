@@ -38,12 +38,7 @@ class App extends Component {
       //1.iterate over them with conditions if(uniquekey), then render card unique to that key
 
   }
-  // fetchResidentNames = (planetResidents) => {
-  //   console.log(promises)
-  //   const promises = planetResidents.map( resident => {
-  //     console.log('fetchResidentNames', resident)
-  //   })
-  // }
+
   fetchResidents = (planets) => {
     const promises = planets.results.map(planet => {
       const residents = planet.residents.map(this.fetchResidentData)
@@ -128,7 +123,6 @@ class App extends Component {
         <Route exact path='/people' render={() => <PeopleCardContainer data={this.state.people}
         toggleFavorites={this.toggleFavorites}/>} />
         <Route exact path='/vehicles' render={() => <VehiclesCardContainer data={this.state.vehicles}
-        toggleFavorites={this.toggleFavorites}
         toggleFavorites={this.toggleFavorites}/>} />
         <Route exact path='/planets' render={() => <PlanetsCardContainer data={this.state.planets}
         toggleFavorites={this.toggleFavorites}/>} />

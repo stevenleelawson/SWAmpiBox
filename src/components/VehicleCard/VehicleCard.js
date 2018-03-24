@@ -8,7 +8,7 @@ const VehicleCard = ({name, model, vehicleClass, passengers, toggleFavorites}) =
       <p className='vehicle-model'>model: {model}</p>
       <p className='vehicle-class'>class: {vehicleClass}</p>
       <p className='vehicle-passenger'>passengers: {passengers}</p>
-      <button onClick={() => toggleFavorites({name, model, vehicleClass, passengers})}>Favorite</button>
+      <button onClick={() => toggleFavorites({name, model, vehicleClass, passengers, category:'vehicles'})}>Favorite</button>
     </div>
   )
 }
