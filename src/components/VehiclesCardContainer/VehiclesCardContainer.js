@@ -3,7 +3,6 @@ import VehicleCard from '../VehicleCard/VehicleCard';
 import './VehiclesCardContainer.css'
 
 const VehiclesCardContainer = ({data, toggleFavorites}) => {
-  console.log('vehicle', data.results)
   let displayVehicles;
   if(data.results){
     displayVehicles = data.results.map((vehicle, index) => {

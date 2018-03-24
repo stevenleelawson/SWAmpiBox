@@ -30,16 +30,6 @@
   animation: crawl 60s linear;
 }
 
-/* .crawl > .title {
-  font-size: 90%;
-  text-align: center;
-}
-
-.crawl > .title h1 {
-  margin: 0 0 100px;
-  text-transform: uppercase;
-} */
-
 @keyframes crawl {
   0% {
     top: 0;
