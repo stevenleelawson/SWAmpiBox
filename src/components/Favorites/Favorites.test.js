@@ -6,8 +6,8 @@ describe('Favorites', () => {
   it('should match the snapshot', () => {
     const mockFavorites = [
       {name: 'Luke'}
-    ]
-    const wrapper = shallow(<Favorites favorites={mockFavorites}/>)
-    expect(wrapper).toMatchSnapshot()
-  })
-})
+    ];
+    const wrapper = shallow(<Favorites favorites={mockFavorites}/>);
+    expect(wrapper).toMatchSnapshot();
+  });
+});

@@ -1,12 +1,12 @@
 import React, {Component} from 'react';
-import './OverViewCrawl.css'
+import './OverViewCrawl.css';
 
 class OverViewCrawl extends Component {
   constructor(){
-    super()
+    super();
     this.state = {
       overView: {}
-    }
+    };
   }
   retrieveOverview() {
     fetch('https://swapi.co/api/films/')
@@ -15,18 +15,20 @@ class OverViewCrawl extends Component {
         this.setState({
           overView: filmData
         })
-      ).catch(error => console.log({error}));
+      ).catch(error => error);
 
   }
   componentDidMount() {
-    this.retrieveOverview()
+    this.retrieveOverview();
   }
 
   render() {
-    const randomNum = Math.floor(Math.random() * Math.floor(6))
-    if(this.state.overView.results) {
+    const randomNum = Math.floor(Math.random() * Math.floor(6));
+    if (this.state.overView.results) {
       let films = this.state.overView.results;
+      /* eslint-disable */
       const filmOpeners = films[randomNum].opening_crawl;
+      /* eslint-enable */
       const titles = films[randomNum].title;
       const releaseDate = films[randomNum].release_date;
 
@@ -41,30 +43,12 @@ class OverViewCrawl extends Component {
             </div>
           </section>
         </div>
-      )
+      );
     } else {
-      return null
+      return null;
     }
   }
 
 }
-// retrieveWeather(input)
-//       .then(response => response.json())
-//       .then(weatherConditions => {
-//
-//         if (weatherConditions.forecast || localStorage.length === 0) {
-//           this.setState({
-//             weatherResults: dataCleaner(weatherConditions),
-//             error: false
-//           });
-//
-//         } else {
-//           this.setState({
-//             error: true
-//           });
-//         }
-//       })
-//       .catch(error => console.log({error}));
-//     this.setToLocal();
-//   }
+
 export default OverViewCrawl;

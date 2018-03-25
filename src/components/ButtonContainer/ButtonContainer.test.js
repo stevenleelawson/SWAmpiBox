@@ -8,8 +8,8 @@ describe('ButtonContainer', () => {
       name: 'Luke',
       species: 'human',
       homeworld: 'tattooine'
-    }
+    };
     const wrapper = shallow(<ButtonContainer favorites={[mockFavorites]}/>);
     expect(wrapper).toMatchSnapshot();
-  })
-})
+  });
+});
