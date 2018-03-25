@@ -61,7 +61,12 @@ ShallowWrapper {
           className="button"
           to="/favorites"
 >
-          Favorites 
+          <span
+                    className="favorites-button"
+          >
+                    Favorites
+          </span>
+           
           <p>
                     1
           </p>
@@ -127,7 +132,12 @@ ShallowWrapper {
           "activeClassName": "active",
           "ariaCurrent": "true",
           "children": Array [
-            "Favorites ",
+            <span
+              className="favorites-button"
+>
+              Favorites
+</span>,
+            " ",
             <p>
               1
 </p>,
@@ -137,7 +147,19 @@ ShallowWrapper {
         },
         "ref": null,
         "rendered": Array [
-          "Favorites ",
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Favorites",
+              "className": "favorites-button",
+            },
+            "ref": null,
+            "rendered": "Favorites",
+            "type": "span",
+          },
+          " ",
           Object {
             "instance": null,
             "key": undefined,
@@ -195,7 +217,12 @@ ShallowWrapper {
             className="button"
             to="/favorites"
 >
-            Favorites 
+            <span
+                        className="favorites-button"
+            >
+                        Favorites
+            </span>
+             
             <p>
                         1
             </p>
@@ -261,7 +288,12 @@ ShallowWrapper {
             "activeClassName": "active",
             "ariaCurrent": "true",
             "children": Array [
-              "Favorites ",
+              <span
+                className="favorites-button"
+>
+                Favorites
+</span>,
+              " ",
               <p>
                 1
 </p>,
@@ -271,7 +303,19 @@ ShallowWrapper {
           },
           "ref": null,
           "rendered": Array [
-            "Favorites ",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Favorites",
+                "className": "favorites-button",
+              },
+              "ref": null,
+              "rendered": "Favorites",
+              "type": "span",
+            },
+            " ",
             Object {
               "instance": null,
               "key": undefined,

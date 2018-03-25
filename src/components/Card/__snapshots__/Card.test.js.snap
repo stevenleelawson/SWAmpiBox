@@ -37,6 +37,7 @@ ShallowWrapper {
           Population: 
 </p>,
         <button
+          className="button"
           onClick={[Function]}
 >
           favorites
@@ -118,6 +119,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": "favorites",
+          "className": "button",
           "onClick": [Function],
         },
         "ref": null,
@@ -153,6 +155,7 @@ ShallowWrapper {
             Population: 
 </p>,
           <button
+            className="button"
             onClick={[Function]}
 >
             favorites
@@ -234,6 +237,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": "favorites",
+            "className": "button",
             "onClick": [Function],
           },
           "ref": null,

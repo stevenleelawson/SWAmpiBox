@@ -10,7 +10,7 @@ const PlanetCard = ({name, terrain, population, climate, residents, toggleFavori
       <p className='planet-population'>population: {population}</p>
       <p className='planet-climate'>climate: {climate}</p>
       <p className='planet-residents'>residents: {residents}</p>
-      <button onClick={() => toggleFavorites({name, terrain, population, climate, residents, category: 'planets'})}>Favorite</button>
+      <button className='button' onClick={() => toggleFavorites({name, terrain, population, climate, residents, category: 'planets'})}>Favorite</button>
       {/* <NavLink className="fav-button" to={'/planets'} onClick={() => toggleFavorites({name, terrain, population, climate, residents, category: 'planets'})}>People</NavLink> */}
 
     </div>

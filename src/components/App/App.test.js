@@ -54,15 +54,16 @@ describe('App', () => {
         json: () => Promise.resolve(mockPeople)
       })
     )
-    fetchSpecies = jest.fn().mockImplementation( () => Promise.resolve({
+    wrapper.instance().fetchSpecies = jest.fn().mockImplementation( () => Promise.resolve({
       mockPeople
     }))
-    fetchHomeworld = jest.fn().mockImplementation( () => Promise.resolve({
+    wrapper.update()
+    wrapper.instance().fetchHomeworld = jest.fn().mockImplementation( () => Promise.resolve({
       name: 'Luke'
     }))
+    wrapper.update()
     wrapper.instance().getPeople();
-    wrapper.instance().fetchSpecies();
-    wrapper.instance().fetchHomeworld();
+    wrapper.update()
 
     expect(wrapper.state('people')).toEqual(mockPeople)
   })
