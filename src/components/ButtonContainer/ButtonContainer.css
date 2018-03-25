@@ -7,3 +7,31 @@
   justify-content: center;
   flex-direction: row;
 }
+.button {
+  border-radius: 50%;
+  color: #ffe900;
+  margin: 3rem;
+  height: 6rem;
+  width: 6rem;
+  background-image: url('./death-star.png');
+  background-size: cover;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 1rem auto;
+
+}
+
+.button:hover {
+  border: 5px solid #ffe900;
+}
+
+.active {
+  border: 5px solid blue;
+}
+
+.favorites-button {
+  margin-top: 1.2rem;
+}
