@@ -66,7 +66,6 @@ ShallowWrapper {
           >
                     Favorites
           </span>
-           
           <p>
                     1
           </p>
@@ -137,7 +136,6 @@ ShallowWrapper {
 >
               Favorites
 </span>,
-            " ",
             <p>
               1
 </p>,
@@ -159,7 +157,6 @@ ShallowWrapper {
             "rendered": "Favorites",
             "type": "span",
           },
-          " ",
           Object {
             "instance": null,
             "key": undefined,
@@ -222,7 +219,6 @@ ShallowWrapper {
             >
                         Favorites
             </span>
-             
             <p>
                         1
             </p>
@@ -293,7 +289,6 @@ ShallowWrapper {
 >
                 Favorites
 </span>,
-              " ",
               <p>
                 1
 </p>,
@@ -315,7 +310,6 @@ ShallowWrapper {
               "rendered": "Favorites",
               "type": "span",
             },
-            " ",
             Object {
               "instance": null,
               "key": undefined,

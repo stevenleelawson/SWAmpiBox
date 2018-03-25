@@ -6,22 +6,26 @@ describe('OverViewCrawl', () => {
   let wrapper;
   let mockOverview = {
     results: [
+      /* eslint-disable */
       {opening_crawl: 'it was a long time ago'}
+      /* eslint-enable */
     ]
-  }
+  };
   beforeEach( () => {
-    wrapper = shallow(<OverViewCrawl/>, { disableLifecycleMethods: true })
-  })
+    wrapper = shallow(<OverViewCrawl/>, { disableLifecycleMethods: true });
+  });
   it('should match the snapshot', () => {
     expect(wrapper).toMatchSnapshot();
-  })
+  });
   it('should call fetch with the correct params', () => {
+    /* eslint-disable */
     window.fetch = jest.fn().mockImplementation(
       () => Promise.resolve({
         json: () => Promise.resolve(mockOverview)
       })
-    )
-    wrapper.instance().retrieveOverview()
-    expect(window.fetch).toHaveBeenCalledWith("https://swapi.co/api/films/")
-  })
-})
+    );
+    /* eslint-enable */
+    wrapper.instance().retrieveOverview();
+    expect(window.fetch).toHaveBeenCalledWith("https://swapi.co/api/films/");
+  });
+});

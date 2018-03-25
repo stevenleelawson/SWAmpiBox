@@ -1,10 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Card should match the snapshot 1`] = `
+exports[`PlanetCard should match the snapshot 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Card />,
+  Symbol(enzyme.__unrendered__): <PlanetCard />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -19,31 +19,36 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <h1
-          className="name"
+          className="planet-name"
 />,
         <p
-          className="species"
+          className="planet-terrain"
 >
-          Species: 
+          terrain: 
 </p>,
         <p
-          className="homeworld"
+          className="planet-population"
 >
-          Homeworld: 
+          population: 
 </p>,
         <p
-          className="population"
+          className="planet-climate"
 >
-          Population:
+          climate: 
+</p>,
+        <p
+          className="planet-residents"
+>
+          residents: 
 </p>,
         <button
           className="button"
           onClick={[Function]}
 >
-          Favorites
+          Favorite
 </button>,
       ],
-      "className": "card",
+      "className": "planet",
     },
     "ref": null,
     "rendered": Array [
@@ -53,7 +58,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": undefined,
-          "className": "name",
+          "className": "planet-name",
         },
         "ref": null,
         "rendered": null,
@@ -65,14 +70,14 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            "Species: ",
+            "terrain: ",
             undefined,
           ],
-          "className": "species",
+          "className": "planet-terrain",
         },
         "ref": null,
         "rendered": Array [
-          "Species: ",
+          "terrain: ",
           undefined,
         ],
         "type": "p",
@@ -83,14 +88,14 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            "Homeworld: ",
+            "population: ",
             undefined,
           ],
-          "className": "homeworld",
+          "className": "planet-population",
         },
         "ref": null,
         "rendered": Array [
-          "Homeworld: ",
+          "population: ",
           undefined,
         ],
         "type": "p",
@@ -101,14 +106,14 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            "Population:",
+            "climate: ",
             undefined,
           ],
-          "className": "population",
+          "className": "planet-climate",
         },
         "ref": null,
         "rendered": Array [
-          "Population:",
+          "climate: ",
           undefined,
         ],
         "type": "p",
@@ -118,12 +123,30 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Favorites",
+          "children": Array [
+            "residents: ",
+            undefined,
+          ],
+          "className": "planet-residents",
+        },
+        "ref": null,
+        "rendered": Array [
+          "residents: ",
+          undefined,
+        ],
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Favorite",
           "className": "button",
           "onClick": [Function],
         },
         "ref": null,
-        "rendered": "Favorites",
+        "rendered": "Favorite",
         "type": "button",
       },
     ],
@@ -137,31 +160,36 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <h1
-            className="name"
+            className="planet-name"
 />,
           <p
-            className="species"
+            className="planet-terrain"
 >
-            Species: 
+            terrain: 
 </p>,
           <p
-            className="homeworld"
+            className="planet-population"
 >
-            Homeworld: 
+            population: 
 </p>,
           <p
-            className="population"
+            className="planet-climate"
 >
-            Population:
+            climate: 
+</p>,
+          <p
+            className="planet-residents"
+>
+            residents: 
 </p>,
           <button
             className="button"
             onClick={[Function]}
 >
-            Favorites
+            Favorite
 </button>,
         ],
-        "className": "card",
+        "className": "planet",
       },
       "ref": null,
       "rendered": Array [
@@ -171,7 +199,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": undefined,
-            "className": "name",
+            "className": "planet-name",
           },
           "ref": null,
           "rendered": null,
@@ -183,14 +211,14 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              "Species: ",
+              "terrain: ",
               undefined,
             ],
-            "className": "species",
+            "className": "planet-terrain",
           },
           "ref": null,
           "rendered": Array [
-            "Species: ",
+            "terrain: ",
             undefined,
           ],
           "type": "p",
@@ -201,14 +229,14 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              "Homeworld: ",
+              "population: ",
               undefined,
             ],
-            "className": "homeworld",
+            "className": "planet-population",
           },
           "ref": null,
           "rendered": Array [
-            "Homeworld: ",
+            "population: ",
             undefined,
           ],
           "type": "p",
@@ -219,14 +247,14 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              "Population:",
+              "climate: ",
               undefined,
             ],
-            "className": "population",
+            "className": "planet-climate",
           },
           "ref": null,
           "rendered": Array [
-            "Population:",
+            "climate: ",
             undefined,
           ],
           "type": "p",
@@ -236,12 +264,30 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Favorites",
+            "children": Array [
+              "residents: ",
+              undefined,
+            ],
+            "className": "planet-residents",
+          },
+          "ref": null,
+          "rendered": Array [
+            "residents: ",
+            undefined,
+          ],
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Favorite",
             "className": "button",
             "onClick": [Function],
           },
           "ref": null,
-          "rendered": "Favorites",
+          "rendered": "Favorite",
           "type": "button",
         },
       ],
