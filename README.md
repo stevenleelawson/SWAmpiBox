@@ -9,4 +9,5 @@ Then run `npm start` to see amazing Star Wars factoids!
 
 ## Description
 
-This project was practice perfecting building React components 
+This project was practice perfecting building React components
+![wire](public/swampibox.png?raw=true "swampibox")
