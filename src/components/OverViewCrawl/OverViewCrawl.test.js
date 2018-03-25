@@ -10,12 +10,12 @@ describe('OverViewCrawl', () => {
     ]
   }
   beforeEach( () => {
-    wrapper = shallow(<OverViewCrawl />)
+    wrapper = shallow(<OverViewCrawl/>, { disableLifecycleMethods: true })
   })
   it('should match the snapshot', () => {
     expect(wrapper).toMatchSnapshot();
   })
-  it.skip('should call fetch with the correct params', () => {
+  it('should call fetch with the correct params', () => {
     window.fetch = jest.fn().mockImplementation(
       () => Promise.resolve({
         json: () => Promise.resolve(mockOverview)

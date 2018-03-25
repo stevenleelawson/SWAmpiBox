@@ -21,8 +21,6 @@ class App extends Component {
     };
   }
   toggleFavorites = (card) => {
-    console.log('card', card);
-    console.log('favssss', this.state.favorites)
     let favorites = [...this.state.favorites];
     const newFavorites = favorites.find(name => name.name === card.name)
     if (newFavorites) {
@@ -36,12 +34,6 @@ class App extends Component {
     // this.state.favorites.filter((favorite, index) => {
     //   return favorite.name === card.name
     // }).length ? favArray.pop(card) : favArray.push(card); this.setState({  favorites: favArray })
-
-  }
-  removeFavorites = (card) => {
-    const favArray = this.state.favorites;
-    const removeArray = this.state.favorites;
-    this.state.favorites.filter(favorite => favorite.name !== card.name); this.setState({ favorites: removeArray })
 
   }
   fetchResidents = (planets) => {
@@ -61,6 +53,7 @@ class App extends Component {
     return fetch(resident)
     .then(response => response.json())
     .then(data => data.name)
+    .catch( error => alert('error'))
   }
   getPlanets = () => {
     const url = 'https://swapi.co/api/planets/'
@@ -68,29 +61,32 @@ class App extends Component {
       .then(response => response.json())
       .then(data => this.fetchResidents(data))
       .then(planets => this.setState({ planets }))
-
+      .catch( error => alert('error'))
   }
   getVehicles = () => {
     const url = 'https://swapi.co/api/vehicles/'
     fetch(url)
     .then(response => response.json())
-    // .then( species => this.fetchSpecies(species))
-    // .then( homeworld => this.fetchHomeworld(homeworld))
     .then(vehicles => this.setState({  vehicles }))
+    .catch( error => alert('error'))
   }
   fetchHomeworld = (starWars) => {
+    console.log('star', starWars)
     const promises = starWars.map(person => {
       return fetch(person.homeworld)
       .then(response => response.json())
       .then(data => ({...person, homeworld: data.name, population: data.population }))
+      .catch( error => alert('error'))
     })
     return Promise.all(promises)
   }
   fetchSpecies = (starWars) => {
+    console.log('fetchspecies', starWars)
     const promises = starWars.results.map(person => {
       return fetch(person.species)
       .then(response => response.json())
       .then(data => ({...person,  species: data.name}) )
+      .catch( error => alert('error'))
       })
     return Promise.all(promises)
   }
@@ -101,19 +97,13 @@ class App extends Component {
     .then( species => this.fetchSpecies(species))
     .then( homeworld => this.fetchHomeworld(homeworld))
     .then(people => this.setState({  people }))
-  }
-  componentDidMount() {
-    this.getPlanets()
-    // this.fetchResidentNames()
+    .catch( error => alert('error'))
   }
   render() {
     return (
       <div className="App">
         <header className="App-header">
           <h1 className="App-title">SWapiBox</h1>
-
-
-
         </header>
         <Route path='/' render={() => <OverViewCrawl />} />
         <Route path='/' render={() => <ButtonContainer

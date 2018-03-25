@@ -21,11 +21,6 @@ ShallowWrapper {
         <header
           className="App-header"
 >
-          <Route
-                    exact={true}
-                    path="/favorites"
-                    render={[Function]}
-          />
           <h1
                     className="App-title"
           >
@@ -42,12 +37,22 @@ ShallowWrapper {
 />,
         <Route
           exact={true}
+          path="/favorites"
+          render={[Function]}
+/>,
+        <Route
+          exact={true}
           path="/people"
           render={[Function]}
 />,
         <Route
           exact={true}
           path="/vehicles"
+          render={[Function]}
+/>,
+        <Route
+          exact={true}
+          path="/planets"
           render={[Function]}
 />,
       ],
@@ -60,48 +65,26 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": Array [
-            <Route
-              exact={true}
-              path="/favorites"
-              render={[Function]}
-/>,
-            <h1
-              className="App-title"
+          "children": <h1
+            className="App-title"
 >
-              SWapiBox
+            SWapiBox
 </h1>,
-          ],
           "className": "App-header",
         },
         "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "exact": true,
-              "path": "/favorites",
-              "render": [Function],
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "SWapiBox",
+            "className": "App-title",
           },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "SWapiBox",
-              "className": "App-title",
-            },
-            "ref": null,
-            "rendered": "SWapiBox",
-            "type": "h1",
-          },
-        ],
+          "ref": null,
+          "rendered": "SWapiBox",
+          "type": "h1",
+        },
         "type": "header",
       },
       Object {
@@ -134,6 +117,19 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "exact": true,
+          "path": "/favorites",
+          "render": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "exact": true,
           "path": "/people",
           "render": [Function],
         },
@@ -154,6 +150,19 @@ ShallowWrapper {
         "rendered": null,
         "type": [Function],
       },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "exact": true,
+          "path": "/planets",
+          "render": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
     ],
     "type": "div",
   },
@@ -167,11 +176,6 @@ ShallowWrapper {
           <header
             className="App-header"
 >
-            <Route
-                        exact={true}
-                        path="/favorites"
-                        render={[Function]}
-            />
             <h1
                         className="App-title"
             >
@@ -188,12 +192,22 @@ ShallowWrapper {
 />,
           <Route
             exact={true}
+            path="/favorites"
+            render={[Function]}
+/>,
+          <Route
+            exact={true}
             path="/people"
             render={[Function]}
 />,
           <Route
             exact={true}
             path="/vehicles"
+            render={[Function]}
+/>,
+          <Route
+            exact={true}
+            path="/planets"
             render={[Function]}
 />,
         ],
@@ -206,48 +220,26 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": Array [
-              <Route
-                exact={true}
-                path="/favorites"
-                render={[Function]}
-/>,
-              <h1
-                className="App-title"
+            "children": <h1
+              className="App-title"
 >
-                SWapiBox
+              SWapiBox
 </h1>,
-            ],
             "className": "App-header",
           },
           "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "exact": true,
-                "path": "/favorites",
-                "render": [Function],
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "SWapiBox",
+              "className": "App-title",
             },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "SWapiBox",
-                "className": "App-title",
-              },
-              "ref": null,
-              "rendered": "SWapiBox",
-              "type": "h1",
-            },
-          ],
+            "ref": null,
+            "rendered": "SWapiBox",
+            "type": "h1",
+          },
           "type": "header",
         },
         Object {
@@ -280,6 +272,19 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "exact": true,
+            "path": "/favorites",
+            "render": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "exact": true,
             "path": "/people",
             "render": [Function],
           },
@@ -300,6 +305,19 @@ ShallowWrapper {
           "rendered": null,
           "type": [Function],
         },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "exact": true,
+            "path": "/planets",
+            "render": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
       ],
       "type": "div",
     },
@@ -310,6 +328,7 @@ ShallowWrapper {
         "enableComponentDidUpdateOnSetState": true,
       },
     },
+    "disableLifecycleMethods": true,
   },
 }
 `;

@@ -29,6 +29,8 @@ ShallowWrapper {
         <VehicleCard
           model={undefined}
           name={undefined}
+          passengers={undefined}
+          toggleFavorites={undefined}
           vehicleClass={undefined}
 />,
       ],
@@ -43,6 +45,8 @@ ShallowWrapper {
         "props": Object {
           "model": undefined,
           "name": undefined,
+          "passengers": undefined,
+          "toggleFavorites": undefined,
           "vehicleClass": undefined,
         },
         "ref": null,
@@ -62,6 +66,8 @@ ShallowWrapper {
           <VehicleCard
             model={undefined}
             name={undefined}
+            passengers={undefined}
+            toggleFavorites={undefined}
             vehicleClass={undefined}
 />,
         ],
@@ -76,6 +82,8 @@ ShallowWrapper {
           "props": Object {
             "model": undefined,
             "name": undefined,
+            "passengers": undefined,
+            "toggleFavorites": undefined,
             "vehicleClass": undefined,
           },
           "ref": null,
