@@ -22,6 +22,7 @@ const Favorites = ({favorites, toggleFavorites}) => {
               homeworld={favorite.homeworld}
               population={favorite.population}
               toggleFavorites={toggleFavorites}
+              key={favorite.name + index}
               />
         console.log('fav',favorite)
       } else if(favorite.category === 'vehicles') {
@@ -31,6 +32,7 @@ const Favorites = ({favorites, toggleFavorites}) => {
                             passengers={favorite.passengers}
                             key={favorite.name + index}
                             toggleFavorites={toggleFavorites}
+                            key={favorite.name + index}
                             />
       } else if(favorite.category === 'planets') {
         return <PlanetCard name={favorite.name}
@@ -38,7 +40,9 @@ const Favorites = ({favorites, toggleFavorites}) => {
                     population={favorite.population}
                     climate={favorite.climate}
                     residents={favorite.residents}
-                    toggleFavorites={toggleFavorites}/>
+                    toggleFavorites={toggleFavorites}
+                    key={favorite.name + index}
+                  />
       }
     }
 

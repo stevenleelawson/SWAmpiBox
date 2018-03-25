@@ -3,16 +3,16 @@ import './PeopleCardContainer.css';
 import Card from '../Card/Card';
 
 const PeopleCardContainer = ({ data, toggleFavorites }) => {
-  console.log('people',data)
   let people;
    if(data){
-   people = data.map( person =>
+   people = data.map( (person, index) =>
 
     <Card name={person.name}
           species={person.species}
           homeworld={person.homeworld}
           population={person.population}
           toggleFavorites={toggleFavorites}
+          key={person.name + index}
           />)
     } else {
       return null

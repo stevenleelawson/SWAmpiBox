@@ -31,6 +31,16 @@ ShallowWrapper {
 >
           class: 
 </p>,
+        <p
+          className="vehicle-passenger"
+>
+          passengers: 
+</p>,
+        <button
+          onClick={[Function]}
+>
+          Favorite
+</button>,
       ],
       "className": "vehicle",
     },
@@ -84,6 +94,36 @@ ShallowWrapper {
         ],
         "type": "p",
       },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "passengers: ",
+            undefined,
+          ],
+          "className": "vehicle-passenger",
+        },
+        "ref": null,
+        "rendered": Array [
+          "passengers: ",
+          undefined,
+        ],
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Favorite",
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": "Favorite",
+        "type": "button",
+      },
     ],
     "type": "div",
   },
@@ -107,6 +147,16 @@ ShallowWrapper {
 >
             class: 
 </p>,
+          <p
+            className="vehicle-passenger"
+>
+            passengers: 
+</p>,
+          <button
+            onClick={[Function]}
+>
+            Favorite
+</button>,
         ],
         "className": "vehicle",
       },
@@ -159,6 +209,36 @@ ShallowWrapper {
             undefined,
           ],
           "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "passengers: ",
+              undefined,
+            ],
+            "className": "vehicle-passenger",
+          },
+          "ref": null,
+          "rendered": Array [
+            "passengers: ",
+            undefined,
+          ],
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Favorite",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": "Favorite",
+          "type": "button",
         },
       ],
       "type": "div",
