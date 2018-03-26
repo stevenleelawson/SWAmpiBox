@@ -5,9 +5,9 @@ import VehiclesCardContainer from './VehiclesCardContainer';
 describe('VehiclesCardContainer', () => {
   it('should match the snapshot', () => {
     const mockData = {
-      results: [ name: 'speeder' ]
-    }
-    const wrapper = shallow(<VehiclesCardContainer data={mockData}/>)
+      results: [name: 'speeder']
+    };
+    const wrapper = shallow(<VehiclesCardContainer data={mockData}/>);
     expect(wrapper).toMatchSnapshot();
-  })
-})
+  });
+});
