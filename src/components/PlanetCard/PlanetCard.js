@@ -37,7 +37,7 @@ PlanetCard.propTypes = {
   terrain: PropTypes.string,
   population: PropTypes.number,
   climate: PropTypes.string,
-  residents: PropTypes.array,
+  residents: PropTypes.string,
   toggleFavorites: PropTypes.func
 };
 

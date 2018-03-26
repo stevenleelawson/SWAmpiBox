@@ -25,7 +25,7 @@ const VehiclesCardContainer = ({data, toggleFavorites}) => {
 };
 
 VehiclesCardContainer.propTypes = {
-  data: PropTypes.array,
+  data: PropTypes.object,
   toggleFavorites: PropTypes.func
 };
 
