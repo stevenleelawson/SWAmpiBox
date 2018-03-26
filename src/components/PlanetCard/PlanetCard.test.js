@@ -4,7 +4,7 @@ import PlanetCard from './PlanetCard';
 
 describe('PlanetCard', () => {
   it('should match the snapshot', () => {
-    const wrapper = shallow(<PlanetCard />)
+    const wrapper = shallow(<PlanetCard />);
     expect(wrapper).toMatchSnapshot();
-  })
-})
+  });
+});
